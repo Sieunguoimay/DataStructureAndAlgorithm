@@ -3,8 +3,11 @@
 #include"BubleSorting.h"
 #include"SelectionSort.h"
 #include"InsertionSort.h"
-int arr[20];//11 elements
-unsigned int size = 20;
+#include"MergeSort.h"
+#include"QuickSort.h"
+#include"RadixSort.h"
+int arr[] = {10,2,3,5,8,7,8,9};//11 elements
+unsigned int size = 8;
 
 void show(){
 	for(int i = 0; i<size;i++)
@@ -19,7 +22,10 @@ int main(){
 	show();
 	//bubleSort(arr,size);
 	//selectionSort(arr,size);
-	insertionSort(arr,size);
+	//insertionSort(arr,size);
+	//mergeSort(arr,size);
+	//quickSort(arr,size);
+	radixSort(arr,size);
 	show();
 	return 0;
 }
